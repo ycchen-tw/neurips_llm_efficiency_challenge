@@ -3,6 +3,8 @@ I'm a graduate student of National Tarwan Unerversity.
 
 I'm trying to fine-tune Mistral or Qwen with parameter efficient methods.
 
+If haven a chance, I hope to get credits of aws.
+
 # Neurips 1 LLM 1 GPU Challenge
 
 This repository provides a starting point for those who are interested in the [NeurIPS 1 LLM 1 GPU Competition](https://llm-efficiency-challenge.github.io/). It provides detailed clarifications on what a submission looks like exactly, and how it will be evaluated and submitted.
