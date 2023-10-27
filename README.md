@@ -1,5 +1,5 @@
 # Short Proposal
-I'm a graduate student of National Tarwan Unerversity.
+I'm a graduate student of National Taiwan Unerversity.
 
 I'm trying to fine-tune Mistral or Qwen with parameter efficient methods.
 
