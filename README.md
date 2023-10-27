@@ -9,9 +9,13 @@ If haven a chance, I hope to get credits of aws.
 
 Three 4090 submissions are in the 4090_submissions folder:
 
-4090_submissions
+4090_submissions/
 
 -> 4090_submissions_1.zip
+
+-> 4090_submissions_2.zip
+
+-> 4090_submissions_3.zip
 
 # Neurips 1 LLM 1 GPU Challenge
 
