@@ -5,6 +5,14 @@ I'm trying to fine-tune Mistral or Qwen with parameter efficient methods.
 
 If haven a chance, I hope to get credits of aws.
 
+## Data Format
+
+Three 4090 submissions are in the 4090_submissions folder:
+
+4090_submissions
+
+-> 4090_submissions_1.zip
+
 # Neurips 1 LLM 1 GPU Challenge
 
 This repository provides a starting point for those who are interested in the [NeurIPS 1 LLM 1 GPU Competition](https://llm-efficiency-challenge.github.io/). It provides detailed clarifications on what a submission looks like exactly, and how it will be evaluated and submitted.
