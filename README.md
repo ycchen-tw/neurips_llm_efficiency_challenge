@@ -1,9 +1,9 @@
 # Short Proposal
-I'm a graduate student of National Taiwan Unerversity.
+We are graduate "students" of National Taiwan Unerversity.
 
-I'm trying to fine-tune Mistral or Qwen with parameter efficient methods.
+Our best submission is a 4bit GPTQ quantized Qwen-14B model without fine-tuning.
 
-If haven a chance, I hope to get credits of aws.
+(Fine-tuned model get lower score😢) 
 
 ## Data Format
 
