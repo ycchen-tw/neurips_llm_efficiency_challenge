@@ -6,7 +6,7 @@ Our best submission is a 8bit GPTQ quantized Qwen-14B model without fine-tuning.
 # Training code
 First replace "YOUR_TOKEN" and "YOUR_USERNAME/YOUR_REPO" in Dockerfile to your token and repo.
 ```bash
-docker build -f ./Dockerfil -t qwen_quant .
+docker build -f ./Dockerfile -t qwen_quant .
 docker run --gpus "device=0" --rm -ti qwen_quant
 ```
 
