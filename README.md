@@ -1,7 +1,14 @@
-# Short Proposal
+# Challenge solution
 We are graduate "students" of National Taiwan Unerversity.
 
 Our best submission is a 8bit GPTQ quantized Qwen-14B model without fine-tuning. (Fine-tuned model get lower score😢) 
+
+# Training code
+First replace "YOUR_TOKEN" and "YOUR_USERNAME/YOUR_REPO" in Dockerfile to your token and repo.
+```bash
+docker build -f ./Dockerfil -t qwen_quant .
+docker run --gpus "device=0" --rm -ti qwen_quant
+```
 
 ## Data Format
 
