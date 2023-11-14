@@ -1,9 +1,7 @@
 # Short Proposal
 We are graduate "students" of National Taiwan Unerversity.
 
-Our best submission is a 4bit GPTQ quantized Qwen-14B model without fine-tuning.
-
-(Fine-tuned model get lower score😢) 
+Our best submission is a 8bit GPTQ quantized Qwen-14B model without fine-tuning. (Fine-tuned model get lower score😢) 
 
 ## Data Format
 
