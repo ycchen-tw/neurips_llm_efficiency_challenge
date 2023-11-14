@@ -1,9 +1,11 @@
-# Challenge solution
+# NeurIPS LLM Efficiency Challenge Solution
+This is the training and inference code of team ycchen.
+
 We are graduate "students" of National Taiwan Unerversity.
 
-Our best submission is a 8bit GPTQ quantized Qwen-14B model without fine-tuning. (Fine-tuned model get lower score😢) 
+Our best submission is a 8bit GPTQ quantized Qwen-14B model without fine-tuning. (Fine-tuned model got lower score😢) 
 
-# Training code
+## Training code
 First replace "YOUR_TOKEN" and "YOUR_USERNAME/YOUR_REPO" in Dockerfile to your token and repo.
 ```bash
 docker build -f ./Dockerfile -t qwen_quant .
