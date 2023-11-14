@@ -1,12 +1,13 @@
 # NeurIPS LLM Efficiency Challenge Solution
-This is the training and inference code of team ycchen.
+This repo presents the training and inference code developed by team ycchen.
 
-We are graduate "students" of National Taiwan Unerversity.
+We are graduate students at National Taiwan University.
 
-Our best submission is a 8bit GPTQ quantized Qwen-14B model without fine-tuning. (Fine-tuned model got lower score😢) 
+Our most effective submission was an 8-bit quantized GPTQ model based on Qwen-14B, which did not undergo fine-tuning. (Interestingly, our fine-tuned model yielded a lower score 😢).
 
-## Training code
-First replace "YOUR_TOKEN" and "YOUR_USERNAME/YOUR_REPO" in Dockerfile to your token and repo.
+## Training Code
+The training code can be found in the folder named 'training_code'. 
+To begin, replace "YOUR_TOKEN" and "YOUR_USERNAME/YOUR_REPO" in the Dockerfile with your personal token and repository details. Execute the following commands:
 ```bash
 docker build -f ./Dockerfile -t qwen_quant .
 docker run --gpus "device=0" --rm -ti qwen_quant
@@ -14,14 +15,11 @@ docker run --gpus "device=0" --rm -ti qwen_quant
 
 ## Data Format
 
-Three 4090 submissions are in the 4090_submissions folder:
+The submissions for the 4090 challenge are contained within the folder '4090_submissions', which includes the following files:
 
-4090_submissions/
-
--> 4090_submissions_1.zip
-
--> 4090_submissions_2.zip
-
--> 4090_submissions_3.zip
+- 4090_submissions/
+  - 4090_submissions_1.zip
+  - 4090_submissions_2.zip
+  - 4090_submissions_3.zip
 
 # Neurips 1 LLM 1 GPU Challenge
