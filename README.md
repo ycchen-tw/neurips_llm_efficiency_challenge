@@ -10,7 +10,7 @@ We are graduate students at National Taiwan University.
 
 Our method is described as follows:
 
-- Base Model: 8-bit [GPTQ](https://github.com/wangitu/unpadded-AutoGPTQ) quantized [Qwen-14B](https://huggingface.co/Qwen/Qwen-14B), using 120 pieces of Wikitext2 as calibration data.
+- Base Model: 8-bit [GPTQ](https://github.com/wangitu/unpadded-AutoGPTQ) quantized [Qwen-14B](https://huggingface.co/Qwen/Qwen-14B), using 120 pieces of [Wikitext](https://huggingface.co/datasets/wikitext) as calibration data.
 
 - Training Data: [Open Assistant](https://huggingface.co/datasets/OpenAssistant/oasst1), [LIMA](https://huggingface.co/datasets/GAIR/lima), [ARC](https://huggingface.co/datasets/ai2_arc), [C4](https://huggingface.co/datasets/c4) dataset, combined with [Humpback](https://arxiv.org/abs/2308.06259) self-alignment technology for data augmentation. 
 
