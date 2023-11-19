@@ -46,7 +46,7 @@ quantize_config = BaseQuantizeConfig(
     bits=8,  # quantize model to 8-bit
     group_size=128,  # it is recommended to set the value to 128
     desc_act=False,  # set to False can significantly speed up inference but the perplexity may slightly bad
-    # model_file_base_name='pytorch_model.bin',  # the name of the model file
+    model_file_base_name='model',  # the name of the model file
 )
 
 # load un-quantized model, by default, the model will always be loaded into CPU memory
@@ -70,12 +70,12 @@ for file in glob.glob('model_configs/*'):
     print(file)
     shutil.copy(file, quantized_model_dir)
 
-os.rename(quantized_model_dir + '/pytorch_model.bin.safetensors', quantized_model_dir + '/model.safetensors')
+# os.rename(quantized_model_dir + '/pytorch_model.bin.safetensors', quantized_model_dir + '/model.safetensors')
 
 # upload quantized model to huggingface hub
-api = HfApi() 
+api = HfApi()
 api.create_repo(token=os.environ["HUGGINGFACE_TOKEN"], name=quantized_model_dir, exist_ok=True)
-api.upload_folder( 
+api.upload_folder(
     folder_path=quantized_model_dir, 
     repo_id=os.environ["HUGGINGFACE_REPO"], 
     repo_type='model', 
