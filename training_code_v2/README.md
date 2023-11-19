@@ -10,4 +10,4 @@ docker build -f ./Dockerfile -t qwen_quant .
 docker run --gpus "device=0" --rm -ti qwen_quant
 ```
 
-The program can complete in approximately 2 hours using a single RTX 3090 GPU.
+The program can complete in approximately 1~2 hours using a single RTX 3090 GPU.
