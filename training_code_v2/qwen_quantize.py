@@ -74,6 +74,9 @@ for file in glob.glob('model_configs/*'):
 
 # upload quantized model to huggingface hub
 api = HfApi()
+api.create_repo(repo_id=os.environ["HUGGINGFACE_REPO"],
+                exist_ok=True,
+                )
 api.upload_folder(
     folder_path=quantized_model_dir, 
     repo_id=os.environ["HUGGINGFACE_REPO"], 
