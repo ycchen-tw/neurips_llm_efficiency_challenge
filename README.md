@@ -1,3 +1,7 @@
+# Important
+
+The latest training code and Readme are in the "training_code_v2" directory.
+
 # NeurIPS LLM Efficiency Challenge Solution
 
 This repository presents the training and inference code developed by team ycchen.
